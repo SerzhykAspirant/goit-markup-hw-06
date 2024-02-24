@@ -25,6 +25,7 @@ img {
     padding-top: 96px;
     padding-bottom: 96px;
     margin: 0%;
+}
 .container {
     max-width: 767px;
     margin: 0 auto;
@@ -144,25 +145,18 @@ text-transform: uppercase;
     line-height: 1.1;
     padding: 0;
 }
-.menu-item-link {
-    color: #404bbf;
-}
-.menu-item-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    width: 48px;
-    border-radius: 2px;
-    background-color: #404BBF;
-}
+
 .menu-item:hover {
-    color:#404BBF;
+    color: #404BBF;
 }
+
 .menu-item:focus {
     color: #404BBF;
 }
+.header-nav-link {
+    color: #404bbf;
+}
+
 .page-address{
     font-style: normal;
     display: flex;
@@ -242,18 +236,7 @@ color: #404BBF;
     background-color: #404BBF;
 }
 /* Section 2 */
-.hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 .page-advantages-list{
     display: flex;
     flex-direction: column;
@@ -264,15 +247,7 @@ color: #404BBF;
     display: flex;
     flex-direction: column;
 }
-.page-advantages-item{
-    color:  #2E2F42;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    font-size: 36px;
-    font-weight: 700;
-    align-self: center;
-}
+
 .page-advantages-list-item-icon {
     width: 264px;
     height: 112px;
@@ -285,6 +260,15 @@ color: #404BBF;
     display: none;
     align-items: center;
     justify-content: center;
+}
+.page-advantages-item{
+    color:  #2E2F42;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    align-self: center;
 }
 .page-advantages-item-text{
     letter-spacing: 0.02em;
@@ -333,13 +317,14 @@ color: #404BBF;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    text-align: center;
     margin-bottom: 8px;
 }
 .page-team-list-item-text{
     font-size: 16px;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 .page-team-list-item-icons {
     display: flex;
@@ -437,43 +422,57 @@ color: #404BBF;
     letter-spacing: 0.02em;
 }
 /* Footer */
-.page-footer{
+
+.footer {
     background:  #2E2F42;
     padding: 96px 0;
 }
-.page-footer .container {
+
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
 }
-.page-footer-container {
+
+.footer-first-column {
     display: flex;
     flex-direction: column;
 }
-.logo-web{
+
+.logo-web-footer {
     display: block;
     margin-bottom: 18px;
     align-self: center;
 }
-.logo-studio-footer{
-    color: #F4F4FD;
+
+.logo-studio-footer {
+    color:  #F4F4FD;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.54px;
     text-transform: uppercase;
 }
-.page-footer-text{
-    color: #F4F4FD;
+
+.footer-text {
+    color:  #F4F4FD;
     font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     max-width: 264px;
 }
-.page-footer-subtitle {
+
+.footer-second-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.footer-subtitle {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
@@ -481,17 +480,20 @@ color: #404BBF;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
-.page-footer-list-icons {
+
+.footer-icons-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
 }
-.page-footer-list-icons-item {
+
+.footer-icons-item {
     width: 40px;
-    height: 40px;
+    height: 40px;  
 }
-.page-footer-icon-a {
+
+.footer-icons-link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -502,15 +504,16 @@ color: #404BBF;
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.page-footer-icon-a:hover {
+
+.footer-icons-link:hover,
+.footer-icons-link:focus {
     background-color: #31D0AA;
 }
-.page-footer-icon-a:focus {
-    background-color: #31D0AA;
-}
-.page-footer-icon-svg {
+
+.footer-icons-svg {
     fill: #f4f4fd;
 }
+
 .footer-third-column {
     margin-left: 0;
     display: flex;
@@ -552,7 +555,7 @@ color: #404BBF;
 }
 
 .footer-btn {
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -572,6 +575,7 @@ color: #404BBF;
     fill: #FFFFFF;
     margin-left: 16px;
 }
+
 /* Modal form */
 .backdrop {
     position: fixed;
@@ -814,7 +818,7 @@ color: #404BBF;
         margin-top: 0;
     }
     
-    .menu-item-link {
+    .menu-item {
         padding-top: 24px;
         padding-bottom: 24px;
         font-size: 16px;
@@ -822,14 +826,14 @@ color: #404BBF;
         line-height: 1.5;
     }
 
-    .header-nav-item:active::after {
+    .menu-item:active::after {
         width: 48px;
         height: 4px;
         flex-shrink: 0;
         background-color: #404BBF;
         content: "";
     }
-    
+
     .header-nav-link {
         position: relative;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1012,50 +1016,50 @@ color: #404BBF;
 
     /* Section 2. Our strengths */
     
-    .strengths-list {
+    .page-advantages-list {
         flex-wrap: nowrap;
     }
     
-    .strengths-item {
+    .page-advantages-list {
         width: calc((100% - 72px) / 4);
     }
 
-    .strengths-item-icon {
+    .page-advantages-list-item-icon {
         display: flex;
     }
     
-    .strengths-item-title {
+    .page-advantages-item {
         align-self: flex-start;
         font-size: 20px;
         font-weight: 500;
     }
     
-    .strengths-item-text {
+    .page-advantages-item-text {
         font-weight: 400;
     }
-    
+
     /* Section 3. Our team */
     
-    .team .container {
+    .page-team .container {
         padding-left: 15px;
         padding-right: 15px;
     }
     
-    .team-list {
+    .page-team-list {
         flex-wrap: nowrap;
     }
     
-    .team-item {
+    .page-team-list-item {
         width: calc((100% - 72px) / 4);
     }
 
     /* Section 4. Our Portfolio */
     
-    .portfolio-list {
+    .page-portfolio-list {
         row-gap: 48px;
     }
     
-    .portfolio-item {
+    .page-portfolio-list-item {
         width: calc((100% - 48px) / 3);
     }
 
