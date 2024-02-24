@@ -37,7 +37,7 @@ textarea,
 button {
     font-family: inherit;
 }
-.visually-hidden {
+.hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -1020,7 +1020,7 @@ color: #404BBF;
         flex-wrap: nowrap;
     }
     
-    .page-advantages-list {
+    .page-advantages-list-item {
         width: calc((100% - 72px) / 4);
     }
 
