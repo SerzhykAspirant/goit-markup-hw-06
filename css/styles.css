@@ -899,35 +899,34 @@ color: #404BBF;
 
     /* Section 3. Our team */
 
-    .team .container {
+    .page-team .container {
         padding-left: 108px;
         padding-right: 108px;
     }
     
-    .team-list {
+    .page-team-list {
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 64px;
         column-gap: 24px;
     }
     
-    .team-item {
+    .page-team-list-item {
         width: calc((100% - 24px) / 2);
     }
 
     /* Section 4. Our Portfolio */
 
-    .portfolio-list {
+    .page-portfolio-list {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
         flex-direction: row;
     }
     
-    .portfolio-item {
+    .page-portfolio-list-item {
         width: calc((100% - 24px) / 2);
     }
-
     /* Footer */
 
     .footer-container {
@@ -984,16 +983,16 @@ color: #404BBF;
 
     /* Header. Logo+navigation */
 
-    .header-nav .logo-web {
+    .page-nav .logo-web {
         margin-right: 76px;
     }
 
-    .header-address {
+    .page-address {
         flex-direction: row;
         gap: 40px;
     }
     
-    .header-address-item {
+    .page-address-item {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -1001,13 +1000,13 @@ color: #404BBF;
     
     /* Section 1. Hero */
 
-    .hero {
+    .page-main {
         padding: 188px 0;
         max-height: 600px;
         max-width: 100%;
     }
     
-    .hero-title {
+    .page-main-title {
         margin: 0 auto 48px;
     }
 
