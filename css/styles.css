@@ -893,7 +893,7 @@ color: #404BBF;
         column-gap: 24px;
     }
     
-    .page-advantages-list{
+    .page-advantages-list-item{
         width: calc((100% - 24px) / 2);
     }
 
