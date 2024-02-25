@@ -902,8 +902,8 @@ color: #404BBF;
     /* Section 3. Our team */
 
     .page-team .container {
-        padding-left: 108px;
-        padding-right: 108px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
     .page-team-list {
