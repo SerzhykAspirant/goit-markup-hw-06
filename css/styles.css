@@ -204,10 +204,8 @@ color: #404BBF;
     line-height: 1.11;
     letter-spacing: 0.02em;
     margin: 0 auto 72px;
-    padding-left: 58px;
-    padding-right: 58px;
     text-transform: capitalize;
-    width: 288px;
+    width: 216px;
     color:  #FFF;
     font-weight: 700;
 }
@@ -773,7 +771,7 @@ color: #404BBF;
     .page-main {
         background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url('../images/background-img@2.jpg');
+            rgba(46, 47, 66, 0.7)), url('../images/background-image@2.jpg');
     }
 }
 
