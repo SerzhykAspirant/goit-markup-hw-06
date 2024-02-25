@@ -122,6 +122,8 @@ text-transform: uppercase;
     background: #FFF;
 }
 .container-mobile {
+    flex-direction: column;
+    display: flex;
     padding: 72px 0 24px 16px;
     max-width: 320px;
     margin: 0 auto;
@@ -802,6 +804,14 @@ color: #404BBF;
     .container {
         max-width: 768px;
     }
+    .container-mobile {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     /* Header. Logo+navigation */
 
@@ -821,10 +831,7 @@ color: #404BBF;
     }
 
     .header-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        display: block;
         position: static;
         padding-left: 0;
         padding-bottom: 0;
