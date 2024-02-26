@@ -112,6 +112,25 @@ text-transform: uppercase;
 .header-button.is-open .header-icon-cross {
     display: block;
 }
+.menu-close-btn {
+    position: absolute;
+    padding: 0;
+    bottom: 24px;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 .header-menu {
     display: none;
     position: fixed;
@@ -181,6 +200,9 @@ color: #404BBF;
 .page-address-item:focus{
     color: #404BBF;
 }
+.address-tell {
+    color: #404bbf;
+}
 .page-footer-list-icons-item {
     width: 40px;
     height: 40px;
@@ -203,17 +225,21 @@ color: #404BBF;
 }
 /* Section 1 */
 .page-main {
-    max-height: 432px;
     max-width: 767px;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url('../images/background-image.jpg');
+    rgba(46, 47, 66, 0.7)), url('../images/background-image-mob.jpg');
     background-color: #2E2F42;
     padding: 72px 0;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .page-main {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-mob2x.jpg);
+    }
 }
 .page-main-title{
     text-align: center;
@@ -640,6 +666,9 @@ color: #404BBF;
     background-color: #404bbf;
     border: none;
 }
+.close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -782,16 +811,6 @@ color: #404BBF;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Media. Resolution */
-
-@media screen and (min-resolution: 192dpi) {
-    .page-main {
-        background-image: linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url('../images/background-image@2.jpg');
-    }
-}
-
 
 /* Media. Tablet */
 
@@ -891,15 +910,24 @@ color: #404BBF;
     .header-icons-list {
         display: none;
     }
+    .menu-close-btn {
+        visibility: hidden;
+    }
 
     /* Section 1. Hero */
 
     .page-main {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-tab.jpg);
         padding: 112px 0;
         max-height: 436px;
         max-width: 1157px;
     }
     
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+        .page-main {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-tab2x.jpg);
+        }
+    }
     .page-main-title {
         margin: 0 auto 36px;
         padding-left: 0;
@@ -965,6 +993,7 @@ color: #404BBF;
         align-content: flex-start;
         row-gap: 72px;
         column-gap: 24px;
+                max-width: 584px;
     }
     
     .logo-web-footer {
@@ -1030,9 +1059,17 @@ color: #404BBF;
     /* Section 1. Hero */
 
     .page-main {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-dec.jpg);
+        min-width: 1158px;
         padding: 188px 0;
         max-height: 600px;
         max-width: 1440px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+        .page-main {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image-dec2x.jpg);
+        }
     }
     
     .page-main-title {
